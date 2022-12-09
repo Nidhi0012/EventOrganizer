@@ -1,0 +1,64 @@
+<!-- <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Events</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+          <li class="nav-item">
+            <a class="nav-link " href="#"routerLink="/login">Login</a>
+          </li>
+          
+         <li class="nav-item">
+            <a class="nav-link " href="#"routerLink="/register">Register</a>
+          </li>
+           </ul>
+       </div>
+    </div>
+  </nav>
+  
+  
+  
+  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
+  <form [formGroup]="loginForm" (ngSubmit)="login()" class="mx-1 mx-md-4">
+    
+      <mat-form-field appearance="fill">
+      <mat-label>Choose an option</mat-label>
+      <select matNativeControl>
+        <option value="Choose" selected></option>
+        <option value="user">User</option>
+        <option value="eventorganiser">Event Organiser</option>
+        <option value="admin">Admin</option>
+      </select>
+      </mat-form-field> 
+  
+    <div class="form-outline mb-4">
+      <input type="email" id="email" class="form-control" />
+      <label class="form-label" for="email" formControlName="email">Email address</label>
+      <div class= "error" class ="text-danger"  *ngIf="loginForm.controls['email'].hasError('required') && loginForm.controls['email'].touched">Email is required</div>
+  
+    </div>
+  
+    <div class="form-outline mb-4">
+      <input type="password" id="password" class="form-control" />
+      <label class="form-label" for="password" formControlName="password">Password</label>
+      <div class= "error" class ="text-danger"  *ngIf="loginForm.controls['password'].hasError('required') && loginForm.controls['password'].touched">Password is required</div>
+  
+    </div>
+  
+    <div class="row mb-4">
+      <div class="col d-flex justify-content-center">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+          <label class="form-check-label" for="form2Example31"> Remember me </label>
+        </div>
+      </div>
+        <div class="col">
+        <a href="#!">Forgot password?</a>
+      </div>
+    </div>
+  
+    <button type="button" class="btn btn-primary btn-block mb-4">Login</button>
+    </form>  -->
